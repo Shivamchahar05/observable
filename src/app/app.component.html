@@ -1,0 +1,17 @@
+<!-- <app-contant></app-contant>
+<app-number></app-number>
+<app-formarray></app-formarray> -->
+<h1>child to parent = {{child | json}}</h1>
+<h1>{{rec}}</h1>
+<app-child [parentname]="name" [empdetails]="empdetails" [array]="array" (childtoparent)="recived($event)" [emp_name]="employee_name"  (name)="reciv($event)"></app-child>
+<div class="app">
+    <div>
+        <app-comp1></app-comp1>
+    </div>
+    <div>
+         <app-comp2></app-comp2>
+    </div>
+    <div>
+         <app-comp3></app-comp3>
+    </div>
+</div>
